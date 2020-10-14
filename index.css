@@ -1,0 +1,302 @@
+:root {
+    --main-bg-color: #160D38;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Cardo', serif;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+    color: #ffffff;
+    background-color: #160D38;
+}
+
+a {
+    text-decoration: none;
+    color: #FF4981;
+}
+
+a:hover {
+    color: #ffffff;
+}  
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+p {
+    display: block;
+}
+
+.has-dropcap:first-child:first-letter {
+    color: #FF4981;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.button {
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: #FF4981;
+    color: #ffffff;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+header {
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.logo {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.logo-tail {
+    color: #FF4981;
+}
+
+.logo-tail-dark {
+    color: #160D38;
+}
+
+section {
+    margin: 3rem 2rem;
+}
+
+#hero {
+    text-align: center;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    width: auto;
+}
+
+.headline {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.subline {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0 10%;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-headline {
+    flex-basis: 40%;
+    display: inline-block;
+    margin: 0 1rem;
+    padding-left: 4rem;
+    text-align: right;
+}
+
+.content-subline {
+    flex-basis: 50%;
+    display: inline-block;
+    margin: 0 1rem;
+    padding-right: 4rem;
+    padding-left: 3rem;
+    text-align: left;
+}
+
+#intro-highlight {
+    color: #FFACC5;
+}
+
+#comparison {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#comparison-highlight {
+    color: #FF6796;
+}
+
+.comparison-table {
+    flex-basis: 50%;
+    margin: 0 1rem;
+    padding-right: 2rem;
+    padding-left: 3rem;
+}
+
+.comparison__table {
+    background: #fff;
+    border-collapse: collapse;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.comparison__table thead tr th:last-of-type {
+    border-top-right-radius: 20px;
+}
+
+.comparison__table tbody tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 20px;
+}
+
+.comparison__header,
+.comparison__header--competitor,
+.comparison__header--kembot {
+    font-weight: 700;
+    text-align: left;
+    padding: 1rem 1rem;
+    color: #160D38;
+}
+
+.comparison__cell {
+    padding: 0.6rem 0;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    font-weight: 400;
+    color: #160D38;
+}
+
+.comparison__header--competitor,
+.comparison__cell--competitor {
+    text-align: center;
+    color: #FF4981;
+}
+
+.comparison__header--kembot,
+.comparison__cell--kembot {
+    text-align: center;
+    background: #FF4981;
+    color: #fff;
+}
+
+
+
+#conclusion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#conclusion-highlight {
+    color: #FF4981;
+}
+
+.content-headline-light {
+    flex-basis: 40%;
+    display: inline-block;
+    margin: 0 1rem;
+    margin-top: 3rem;
+    padding-left: 4rem;
+    text-align: right;
+}
+
+.content-subline-light {
+    flex-basis: 50%;
+    display: inline-block;
+    margin: 0 1rem;
+    padding-right: 4rem;
+    padding-left: 3rem;
+    text-align: left;
+}
+
+#cta {
+    text-align: center;
+}
+
+.cta-headline {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.cta-subline {
+    display: block;
+    margin: 0 1rem;
+}
+
+footer {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+small {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        margin: 0 auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #intro, #comparison, #conclusion, #cta {
+        margin: 1.5rem .5rem;
+        padding: 0 auto;
+        flex-direction: column;
+    }
+
+    .content-headline {
+        padding-left: 0;
+    }
+
+    .content-headline-light {
+        padding-left: 0;
+    }
+
+    .comparison-table {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
