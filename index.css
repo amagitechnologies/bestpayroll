@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: #160D38;
 }
-  
+
 * {
     box-sizing: border-box;
 }
@@ -13,14 +13,36 @@ body {
     padding: 0;
     font-family: 'Cardo', serif;
     font-size: 1.5rem;
-    overflow-x: hidden;
     color: #ffffff;
     background-color: #160D38;
+    transition: all 1s ease;
 }
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 2rem;
+}
+
+/* colours */
+.color-light {
+    color: #160D38;
+    background-color: #FFFFFF;
+}
+
+.color-pink {
+    color: #FFFFFF;
+    background-color: #FF4981;
+}
+
+/* end of colours */
 
 a {
     text-decoration: none;
     color: #FF4981;
+    transition: all 0.2s ease;
 }
 
 a:hover {
@@ -55,13 +77,23 @@ p {
 
 .button {
     display: inline-block;
-    margin: 2rem 0;
-    padding: 1rem 2rem;
+    margin: 3rem 0;
+    padding: 1rem 2.5rem;
     background-color: #FF4981;
     color: #ffffff;
     border-radius: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    color: #FF4981;
+    background-color: #FFFFFF;
+}
+
+.highlight {
+    color: #FF4981;
 }
 
 header {
@@ -83,11 +115,12 @@ header {
     color: #160D38;
 }
 
-section {
-    margin: 3rem 2rem;
-}
-
 #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 15rem);
     text-align: center;
     padding: 0 10%;
     display: flex;
@@ -183,9 +216,16 @@ section {
 
 .comparison__table tbody tr:last-of-type td:last-of-type {
     border-bottom-right-radius: 20px;
+    padding-bottom: 3rem;
 }
 
-.comparison__header,
+.comparison__header {
+    font-weight: 700;
+    text-align: left;
+    padding: 1.5rem 1.5rem;
+    color: #FF4981;
+}
+
 .comparison__header--competitor,
 .comparison__header--kembot {
     font-weight: 700;
@@ -196,16 +236,16 @@ section {
 
 .comparison__cell {
     padding: 0.6rem 0;
-    padding-left: 1rem;
-    padding-right: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     font-weight: 400;
     color: #160D38;
 }
 
-.comparison__header--competitor,
-.comparison__cell--competitor {
+.comparison__cell--competitor,
+.comparison__cell--kembot {
+    color: #160D38;
     text-align: center;
-    color: #FF4981;
 }
 
 .comparison__header--kembot,
@@ -222,10 +262,6 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-#conclusion-highlight {
-    color: #FF4981;
 }
 
 .content-headline-light {
@@ -260,9 +296,18 @@ section {
     margin: 0 1rem;
 }
 
+#cta .button:hover {
+    color: #FFFFFF;
+    background-color: #160D38;
+}
+
 footer {
     text-align: center;
     margin: 1.5rem;
+}
+
+footer a:hover {
+    color: #160D38;
 }
 
 small {
@@ -277,6 +322,10 @@ small {
     h2 {
         text-align: center;
         font-size: 2.5rem;
+    }
+
+    #hero {
+        height: unset;
     }
 
     #intro, #comparison, #conclusion, #cta {
