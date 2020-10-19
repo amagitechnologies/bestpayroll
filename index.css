@@ -197,8 +197,6 @@ header {
 .comparison-table {
     flex-basis: 50%;
     margin: 0 1rem;
-    padding-right: 2rem;
-    padding-left: 3rem;
 }
 
 .comparison__table {
@@ -268,8 +266,6 @@ header {
     flex-basis: 40%;
     display: inline-block;
     margin: 0 1rem;
-    margin-top: 3rem;
-    padding-left: 4rem;
     text-align: right;
 }
 
@@ -334,8 +330,13 @@ small {
         flex-direction: column;
     }
 
-    .content-headline {
+    .content-row {
+        flex-direction: column;
+    }
+
+    .content-headline, .content-headline-light {
         padding-left: 0;
+        text-align: center;
     }
 
     .content-headline-light {
@@ -348,4 +349,41 @@ small {
         padding-right: 0;
     }
 
+    #cta {
+        margin: 0 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    p, .logo {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    #hero, #intro {
+        margin: 0 10px;
+        padding: 0px;
+    }
+
+    .headline, h2 {
+        font-size: 2.0rem;
+    }
+
+    .subline {
+        padding: 0;
+        text-align: left;
+    }
+
+    .content-headline, .content-subline, .content-subline-light, .content-headline-light, .comparison-table {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .comparison__table {
+        font-size: 0.65rem;
+    }
 }
