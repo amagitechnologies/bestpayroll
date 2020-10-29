@@ -23,7 +23,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 6rem 2rem;
+    margin: 4rem 2rem;
+}
+
+.panel:first-of-type {
+    margin-top: 0;
+}
+
+.panel-row {
+    margin: 1.5rem .5rem;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* colours */
@@ -75,20 +88,67 @@ p {
     padding-left: 3px;
 }
 
-.button {
+.email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.email-form-mobile {
+    margin: 1rem 0;
+    display: none;
+}
+
+input[type=email] {
     display: inline-block;
-    margin: 3rem 0;
+    margin: 0 .5rem;
+    padding: 1rem 1.5rem;
+    border: 1.5px solid #fff;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+input[type=email]:hover {
+    border: 1.5px solid #FF6796;
+}
+
+input[type=email]:valid {
+    border: 1px solid #fff;
+}
+
+.button, .button-light, button {
+    display: inline-block;
+    margin-top: .5rem;
     padding: 1rem 2.5rem;
     background-color: #FF4981;
     color: #ffffff;
+    border: 1.5px solid #FF4981;;
     border-radius: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     transition: all 0.3s ease;
 }
 
-.button:hover {
+button {
+    display: inline-block;
+    margin: 0;
+    margin-left: .5rem;
+    padding: 1rem 2.5rem;
+    background-color: #FF4981;
+    color: #ffffff;
+    border: 1.5px solid #FF4981;;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+button:hover, .button:hover {
     color: #FF4981;
+    border: 1.5px solid #FFFFFF;
     background-color: #FFFFFF;
 }
 
@@ -96,9 +156,22 @@ p {
     color: #FF4981;
 }
 
-header {
-    text-align: center;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1.2rem;
+}
+
+.tab {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.tab:hover {
+    color: #FF4981;
 }
 
 .logo {
@@ -119,14 +192,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: calc(100vh - 15rem);
+    align-content: center;
+    height: calc(100vh - 12rem);
     text-align: center;
     padding: 0 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-text {
@@ -144,22 +213,13 @@ header {
     padding: 0 10%;
 }
 
-#intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro-header {
-    display: flex;
-    flex-direction: row;
+.main-header {
+    text-align: center;
     margin-bottom: 4rem;
 }
 
-.content-row {
-    display: flex;
-    flex-direction: row;
+#intro-highlight {
+    color: #FFACC5;
 }
 
 .content-headline {
@@ -179,24 +239,33 @@ header {
     text-align: left;
 }
 
-#intro-highlight {
-    color: #FFACC5;
-}
-
-#comparison {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 #comparison-highlight {
     color: #FF6796;
 }
 
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding-right: 2rem;
+    padding-left: 3rem;
+}
+
 .comparison-table {
     flex-basis: 50%;
-    margin: 0 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 3rem;
+}
+
+.comparison-description {
+    flex-basis: 50%;
+    display: inline-block;
+    margin: .5rem 0;
+    text-align: left;
 }
 
 .comparison__table {
@@ -206,6 +275,7 @@ header {
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    text-align: left;
 }
 
 .comparison__table thead tr th:last-of-type {
@@ -214,13 +284,12 @@ header {
 
 .comparison__table tbody tr:last-of-type td:last-of-type {
     border-bottom-right-radius: 20px;
-    padding-bottom: 3rem;
 }
 
 .comparison__header {
     font-weight: 700;
     text-align: left;
-    padding: 1.5rem 1.5rem;
+    padding: 1rem;
     color: #FF4981;
 }
 
@@ -228,14 +297,14 @@ header {
 .comparison__header--kembot {
     font-weight: 700;
     text-align: left;
-    padding: 1rem 1rem;
+    padding: 1rem;
     color: #160D38;
 }
 
 .comparison__cell {
     padding: 0.6rem 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
     font-weight: 400;
     color: #160D38;
 }
@@ -253,19 +322,11 @@ header {
     color: #fff;
 }
 
-
-
-#conclusion {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .content-headline-light {
     flex-basis: 40%;
     display: inline-block;
     margin: 0 1rem;
+    padding-left: 4rem;
     text-align: right;
 }
 
@@ -280,6 +341,7 @@ header {
 
 #cta {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .cta-headline {
@@ -292,8 +354,9 @@ header {
     margin: 0 1rem;
 }
 
-#cta .button:hover {
+.button-light:hover {
     color: #FFFFFF;
+    border: 1.5px solid #160D38;
     background-color: #160D38;
 }
 
@@ -311,83 +374,121 @@ small {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
     section {
         margin: 0 auto;
     }
 
+    .headline {
+        font-size: 2rem;
+    }
+
+    .subline {
+        display: inline-block;
+        margin: 1rem 0;
+        padding: 0;
+    }
+
     h2 {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #hero {
         height: unset;
     }
 
-    #intro, #comparison, #conclusion, #cta {
-        margin: 1.5rem .5rem;
-        padding: 0 auto;
+    .email-form {
+        display: none;
+    }
+
+    .email-form-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    input[type=email] {
+        margin: 0;
+        margin-right: .5rem;
+    }
+
+    button {
+        margin: 0;
+        padding: 1rem 2rem;
+    }
+
+    .button {
+        margin-bottom: 2rem;
+    }
+
+    .button-light:hover {
+        color: #FF4981;
+        border: 1.5px solid #FFFFFF;
+        background-color: #FFFFFF;
+    }
+
+    .main-header {
+        margin-bottom: 1rem;
+    }
+
+    .panel {
+        margin: 0 2rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .panel-row {
         flex-direction: column;
     }
 
     .content-row {
+        display: flex;
         flex-direction: column;
     }
 
-    .content-headline, .content-headline-light {
+    .content-headline {
         padding-left: 0;
-        text-align: center;
     }
 
     .content-headline-light {
         padding-left: 0;
     }
 
+    .content-subline, .content-subline-light {
+        padding: 0;
+        margin: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-subline {
+        margin: 0;
+    }
+
     .comparison-table {
-        text-align: center;
-        padding-left: 0;
-        padding-right: 0;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
     }
 
-    #cta {
-        margin: 0 1.2rem;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    body {
+    .comparison__header {
         padding: 1rem;
     }
-
-    p, .logo {
-        font-size: 1.2rem;
-    }
-
-    .button {
-        font-size: 1rem;
-        margin: 1.5rem 0;
+    
+    .comparison__header--competitor,
+    .comparison__header--kembot {
+        padding: 1rem;
     }
     
-    #hero, #intro {
-        margin: 0 10px;
-        padding: 0px;
+    .comparison__cell {
+        padding: .4rem 1rem;
+        font-size: .8rem;
     }
 
-    .headline, h2 {
-        font-size: 2.0rem;
-    }
-
-    .subline {
-        padding: 0;
-        text-align: justify;
-    }
-
-    .content-headline, .content-subline, .content-subline-light, .content-headline-light, .comparison-table {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .comparison__table {
-        font-size: 0.65rem;
-    }
 }
