@@ -284,6 +284,7 @@ nav {
 
 .comparison__table tbody tr:last-of-type td:last-of-type {
     border-bottom-right-radius: 20px;
+    padding-bottom: 3rem;
 }
 
 .comparison__header {
@@ -303,8 +304,8 @@ nav {
 
 .comparison__cell {
     padding: 0.6rem 0;
-    padding-left: 1rem;
-    padding-right: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     font-weight: 400;
     color: #160D38;
 }
@@ -341,7 +342,7 @@ nav {
 
 #cta {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .cta-headline {
@@ -466,6 +467,10 @@ small {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #cta {
+        margin-bottom: 3rem;
     }
 
     .cta-subline {
