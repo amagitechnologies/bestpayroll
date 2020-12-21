@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.tab:hover {
+    color: #FF4981;
+}
+
+.amagi--logo {
+    color: #ffffff;
+}
+
+.amagi--logo:hover {
+    color: #fe9156;
+}
+
+#email {
+    width: 40%;
+}
+
+.email-form-mobile #email {
+    width: 60%;
+}
+
+.download {
+    margin-top: 5vh;
+}
+
+.privacy {
+    font-size: .8rem;
+}

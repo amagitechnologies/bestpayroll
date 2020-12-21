@@ -4,16 +4,22 @@
     <!-- METADATA -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>SmartPayroll | Smarter Payroll System for the Philippines</title>
+    <title>SmartPayroll | A Smarter Payroll System for the Philippines</title>
     <meta
       name="description"
-      content="Better, faster, easier, affordable payroll software for your business in the Philippines."
+      content="Better, faster, easier, and affordable payroll software for your business in the Philippines."
     />
-    
-    <link rel="stylesheet" href="https://use.typekit.net/syn8ymb.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@400;700;800&display=swap" /> 
-    <link rel="stylesheet" href="./index.css" />
 
+    <link rel="stylesheet" href="https://use.typekit.net/syn8ymb.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@400;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./resources.css" />
+
+    <script src="./notifications.js"></script>
+    <script src="./resources.js"></script>
     <script
       src="https://kit.fontawesome.com/297c891af6.js"
       crossorigin="anonymous"
@@ -36,7 +42,7 @@
 
     <!-- Google Tag Manager -->
     <script>
-      (function(w, d, s, l, i) {
+      (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
@@ -56,45 +62,58 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-KMLDMMR"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"
+        style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
     <nav>
-      <a class="logo" href="https://smartpayroll.ph">Smart<span class="logo-tail">Payroll</span>.ph</a>
+      <a class="logo" href="https://smartpayroll.ph"
+        >Smart<span class="logo-tail">Payroll</span>.ph</a
+      >
       <a class="tab" href="https://smartpayroll.ph">Try SmartPayroll</a>
     </nav>
     <header id="hero">
-      <h1 class="headline">Free Alphalist Template</h1>
-      <p class="subline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="email-form">
-          <input type="email" id="email" name="email" placeholder="name@website.com">
-          <button type="submit">Download Now</a>
-      </div>
-      <div class="email-form-mobile">
-          <input type="email" id="email" name="email" placeholder="name@website.com">
-              <button type="submit"><i class="fas fa-download"></i></a>
-          </input>
-      </div>
+      <h1 class="headline">Philippines BIR Alphalist Template</h1>
+      <a class="download" href="#free"><button>Download Template</button></a>
     </header>
     <main>
-      <div class="panel-row">
+      <div id="free" class="panel-row">
         <div class="content-headline">
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h2>Free Resource</h2>
         </div>
         <div class="content-subline">
-          <p class="has-dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla velit at bibendum efficitur. Pellentesque varius ornare velit. Maecenas iaculis orci vel velit commodo pellentesque.</p>
-          <a class="button" href="https://calendly.com/amagi-sales">Schedule a Call</a>
+          <p class="has-dropcap">
+            Improve your annual payroll process with a FREE spreadsheet to calculate your BIR Alphalist to keep you organized and on top of your regulatory requirements. This Google Sheets template can be easily modified for your existing payroll team structure and process.
+          </p>
+          <a class="privacy" href="privacy.html">Privacy Policy</a>
         </div>
       </div>
+      <form class="email-form" id="email-form">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="name@website.com"
+        />
+        <button type="submit">Download Now</button>
+      </form>
+      <form class="email-form-mobile" id="email-form-mobile">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="name@website.com"
+        />
+        <button type="submit"><i class="fas fa-download"></i></button>
+      </form>
       <div class="panel" id="cta">
         <div class="cta-headline">
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h2>Try SmartPayroll Today</h2>
         </div>
         <div class="table">
           <table class="comparison__table">
             <thead>
               <tr>
-                <th class="comparison__header">Lorem ipsum</th>
+                <th class="comparison__header">Features</th>
                 <th class="comparison__header--kembot">Smart<span class="logo-tail-dark">Payroll</span></th>
                 <th class="comparison__header--competitor">
                   Others
@@ -104,7 +123,7 @@
             <tbody>
               <tr>
                 <td class="comparison__cell">
-                  Lorem ipsum dolor sit amet
+                  BIR and TRAIN law compliant
                 </td>
                 <td class="comparison__cell--kembot">
                   <i class="fas fa-check"></i>
@@ -115,18 +134,7 @@
               </tr>
               <tr>
                 <td class="comparison__cell">
-                  Lorem ipsum dolor sit amet
-                </td>
-                <td class="comparison__cell--kembot">
-                  <i class="fas fa-check"></i>
-                </td>
-                <td class="comparison__cell--competitor">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td class="comparison__cell">
-                  Lorem ipsum dolor sit amet
+                  User-focused enhancements
                 </td>
                 <td class="comparison__cell--kembot">
                   <i class="fas fa-check"></i>
@@ -137,7 +145,7 @@
               </tr>
               <tr>
                 <td class="comparison__cell">
-                  Lorem ipsum dolor sit amet
+                  Easy, free setup
                 </td>
                 <td class="comparison__cell--kembot">
                   <i class="fas fa-check"></i>
@@ -148,7 +156,7 @@
               </tr>
               <tr>
                 <td class="comparison__cell">
-                  Lorem ipsum dolor sit amet
+                  Generates payslips and memoranda
                 </td>
                 <td class="comparison__cell--kembot">
                   <i class="fas fa-check"></i>
@@ -159,7 +167,7 @@
               </tr>
               <tr>
                 <td class="comparison__cell">
-                  Lorem ipsum dolor sit amet
+                  Generates bank transmittals
                 </td>
                 <td class="comparison__cell--kembot">
                   <i class="fas fa-check"></i>
@@ -170,7 +178,7 @@
               </tr>
               <tr>
                 <td class="comparison__cell">
-                  Lorem ipsum dolor sit amet
+                  Works with any attendance device
                 </td>
                 <td class="comparison__cell--kembot">
                   <i class="fas fa-check"></i>
@@ -181,7 +189,18 @@
               </tr>
               <tr>
                 <td class="comparison__cell">
-                  Lorem ipsum dolor sit amet
+                  Data Privacy Act compliant
+                </td>
+                <td class="comparison__cell--kembot">
+                  <i class="fas fa-check"></i>
+                </td>
+                <td class="comparison__cell--competitor">
+                  &nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison__cell">
+                  No hidden fees
                 </td>
                 <td class="comparison__cell--kembot">
                   <i class="fas fa-check"></i>
@@ -194,14 +213,19 @@
           </table>
         </div>
         <div class="cta-subline">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a class="button" href="https://calendly.com/amagi-sales">Schedule a Call</a>
+          <p>Let's schedule an online demo with your business's payroll team today.</p>
+          <a class="button" href="https://calendly.com/amagi-tech"
+            >Schedule a Call</a
+          >
         </div>
       </div>
     </main>
     <footer>
       <small class="copyright">
-        © 2020 SmartPayroll by <a href="https://www.amagi.io/">AMAGI</a>. All rights reserved.
+        © 2020 SmartPayroll. All rights reserved.
+      </small>
+      <small class="amagi">
+        <a href="https://amagi.io" class="amagi--logo">AMAGI</a>
       </small>
     </footer>
     <!-- End Google Tag Manager (noscript) -->

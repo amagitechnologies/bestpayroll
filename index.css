@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Enhanced;
+    src: url('assets/fonts/jaapokkisubtract-regular.woff');
+  }
+
 :root {
     --main-bg-color: #160D38;
 }
@@ -16,6 +21,11 @@ body {
     color: #ffffff;
     background-color: #160D38;
     transition: all 1s ease;
+}
+
+nav {
+    text-align: center;
+    padding: 1.2rem;
 }
 
 .panel {
@@ -88,6 +98,10 @@ p {
     padding-left: 3px;
 }
 
+.has-dropcap {
+    text-align: justify;
+}
+
 .email-form {
     display: flex;
     flex-direction: row;
@@ -156,24 +170,6 @@ button:hover, .button:hover {
     color: #FF4981;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2rem;
-}
-
-.tab {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: .8rem;
-    font-weight: 600;
-}
-
-.tab:hover {
-    color: #FF4981;
-}
-
 .logo {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -203,7 +199,7 @@ nav {
 }
 
 .headline {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 1rem 0;
 }
 
@@ -362,8 +358,28 @@ nav {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 1.5rem;
+    margin-top: 5rem;
+}
+
+footer small {
+    margin: .5rem;
+}
+
+.amagi {
+    font-family: 'Enhanced', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+
+.amagi--logo {
+    color: #000000;
+}
+
+.amagi--logo:hover {
+    color: #fe9156;
 }
 
 footer a:hover {
