@@ -59,7 +59,6 @@ nav {
     color: #FFFFFF;
     background-color: #FF4981;
 }
-
 /* end of colours */
 
 a {
@@ -214,6 +213,36 @@ button:hover, .button:hover {
     margin-bottom: 4rem;
 }
 
+.step {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 2rem;
+    padding: 2rem;
+    padding-bottom: .5rem;
+    min-width: 300px;
+    width: 25%;
+    border-radius: 20px;
+    color: #160D38;
+    background-color: #fff;
+}
+
+.step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -4.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    color: #fff;
+    background-color: #FF4981;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
 #intro-highlight {
     color: #FFACC5;
 }
@@ -272,15 +301,19 @@ button:hover, .button:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     text-align: left;
+    overflow: hidden;
 }
 
-.comparison__table thead tr th:last-of-type {
-    border-top-right-radius: 20px;
-}
-
-.comparison__table tbody tr:last-of-type td:last-of-type {
+.comparison__table tbody tr:last-of-type {
+    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding-bottom: 3rem;
+    background: #FF4981;
+    box-shadow: 0 1px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+tr:last-of-type td {
+    font-weight: bold;
+    color: #fff;
 }
 
 .comparison__header {
@@ -308,6 +341,7 @@ button:hover, .button:hover {
 
 .comparison__cell--competitor,
 .comparison__cell--kembot {
+    padding: .8rem;
     color: #160D38;
     text-align: center;
 }
@@ -336,17 +370,59 @@ button:hover, .button:hover {
     text-align: left;
 }
 
+#pricing {
+    text-align: center;
+    padding: 3rem;
+    margin: 0;
+    background-color: #FF4981;
+}
+
+.pricing-headline {
+    display: inline-block;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.pricing-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    margin: 1rem 2rem;
+    width: 20%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    box-shadow: 0px 0px 6px 1px rgba(73, 88, 152, 0.15);
+}
+
+.plan__employees {
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #FF4981;
+}
+
+.plan__price {
+    font-size: 2.5rem;
+}
+
 #cta {
     text-align: center;
     margin-bottom: 5rem;
 }
 
-.cta-headline {
+.cta__headline {
     display: inline-block;
     margin: 0 1rem;
 }
 
-.cta-subline {
+.cta__subline {
     display: block;
     margin: 0 1rem;
 }
@@ -393,6 +469,7 @@ small {
 @media only screen and (max-width: 768px) {
     body {
         font-size: 1rem;
+        margin: auto;
     }
 
     section {
@@ -463,9 +540,11 @@ small {
         flex-direction: column;
     }
 
-    .content-row {
+    .panel-row, .content-row, .pricing-row {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .content-headline {
@@ -483,6 +562,36 @@ small {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .step {
+        margin: 1.5rem;
+        padding: 1.2rem;
+        padding-bottom: .5rem;
+        width: 80%;
+    }
+
+    .step-number {
+        font-size: 1.5rem;
+        top: -3rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #pricing {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .plan {
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        width: 80%;
+    }
+
+    .plan__employees {
+        margin-bottom: 1rem;
     }
 
     #cta {
