@@ -304,9 +304,14 @@ button:hover, .button:hover {
     margin-bottom: 4rem;
 }
 
+#process {
+    align-items: stretch;
+}
+
 .step {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     margin: 2rem;
     padding: 2rem;
@@ -316,6 +321,11 @@ button:hover, .button:hover {
     border-radius: 20px;
     color: #160D38;
     background-color: #fff;
+}
+
+.step p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .step-number {
